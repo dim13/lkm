@@ -1,0 +1,11 @@
+#!/bin/sh
+
+if [$# -ne 3 ]; then
+	echo "$0 should only be called from modload(8) with 3 args"
+	exit 1
+fi
+
+rm -f /dev/coffee
+mknod -m 660 /dev/coffee c $3 0
+
+exit 0
