@@ -1,5 +1,5 @@
 LKM=	hidep
-MAN=
+NOMAN=
 
 COPTS=	-Wall -Werror
 
