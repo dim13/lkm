@@ -1,0 +1,45 @@
+kslog v0.1 a2
+----------
+
+
+introduction
+----------
+
+This is a simple toolkit for logging terminal input at the kernel level. The kslog LKM hijacks the tty input function getc and processes all terminal input. Keystrokes that belong to a specified user id or process id are placed in a buffer in-kernel and made available to userland processes via a character device interface. Some work needs to be done on processing of keystroke data prior to passing to the userland accessible character device buffer.
+
+
+how to build, use and clean in 10 easy steps
+----------
+
+1. cd <kslog_directory>
+2. make
+3. make load
+4. mknod -m 644 /dev/kslog c 29 0
+5. cd kslog_cli
+6. ./kslog -g
+7. cd ..
+8. make unload
+9. rm /dev/kslog
+10. make clean
+
+
+notes
+-----------
+if you are having problems consult the best documentation available: the source code.
+
+
+stuff to add
+-----------
+improved keystroke pre-processing, dmesg hiding, LKM table hiding.
+
+
+related code
+-----------
+prochide-v0.1.tar.gz - openbsd kernel mode process hiding LKM available from http://gravitino.net/~mike/.
+
+
+contact
+-----------
+send e-mail to mike@gravitino.net
+
+-mike
