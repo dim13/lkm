@@ -1,0 +1,24 @@
+Simple driver for /dev/coffee:
+
+How install it:
+---------------
+You'll have to change the secure level of the kernel (see securelevel(7)):
+In /etc/rc.securelevel: change "securelevel=1" to "securelevel=-1".
+Copy coffee.tar.gz in /usr/src/lkm/
+untar it.
+cd /usr/src/lkm/coffee/
+make
+make load
+Next step: creating the /dev/ entry of the driver:
+Do `modstat`, and take the major number of the driver,
+`mknod coffee c $MAJOR 0`
+That's it.
+
+How it works:
+-------------
+`echo capuccino > /dev/coffee` puts the Coffee machine plugged on the parallel
+         port of the PC on, assuming you've put coffee and water in :) 
+`cat /dev/coffee` puts it off.
+
+
+Good drink. :)
