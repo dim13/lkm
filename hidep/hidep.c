@@ -1,27 +1,28 @@
 /*
- * γοπωςιηθτ (γ) 2003 ομεη σαζιυμμιξ <ζοςνΰπδπ11.οςη.ςυ>
- * αμμ ςιηθτσ ςεσεςφεδ.
+ * Copyright (c) 2003, Oleg Safiullin <form@pdp11.org.ru>
+ *  All rights reserved.
  *
- * ςεδιστςιβυτιοξ  αξδ  υσε  ιξ  σουςγε  αξδ  βιξαςω  ζοςνσ,  χιτθ ος χιτθουτ
- * νοδιζιγατιοξ,  αςε  πεςνιττεδ  πςοφιδεδ  τθατ  τθε  ζομμοχιξη   γοξδιτιοξσ
- * αςε νετ:
- * 1. ςεδιστςιβυτιοξσ  οζ  σουςγε γοδε νυστ ςεταιξ τθε αβοφε γοπωςιηθτ ξοτιγε
- *    υξνοδιζιεδ, τθισ μιστ οζ γοξδιτιοξσ, αξδ τθε ζομμοχιξη δισγμαινες.
- * 2. ςεδιστςιβυτιοξσ  ιξ  βιξαςω  ζοςν  νυστ  ςεπςοδυγε  τθε αβοφε γοπωςιηθτ
- *    ξοτιγε,  τθισ  μιστ  οζ  γοξδιτιοξσ αξδ τθε ζομμοχιξη δισγμαινες ιξ τθε
- *    δογυνεξτατιοξ αξδ/ος οτθες νατεςιαμσ πςοφιδεδ χιτθ τθε διστςιβυτιοξ.
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
  *
- * τθισ σοζτχαςε ισ πςοφιδεδ βω τθε αυτθος αξδ γοξτςιβυτοςσ ``ασ ισ'' αξδ αξω
- * εψπςεσσ  ος ινπμιεδ χαςςαξτιεσ, ιξγμυδιξη, βυτ ξοτ μινιτεδ το, τθε ινπμιεδ
- * χαςςαξτιεσ  οζ  νεςγθαξταβιμιτω  αξδ  ζιτξεσσ ζος α παςτιγυμας πυςποσε αςε
- * δισγμαινεδ. ιξ ξο εφεξτ σθαμμ τθε αυτθος ος γοξτςιβυτοςσ βε μιαβμε ζος αξω
- * διςεγτ, ιξδιςεγτ, ιξγιδεξταμ, σπεγιαμ, εψενπμαςω, ος γοξσερυεξτιαμ δαναηεσ
- * (ιξγμυδιξη,  βυτ  ξοτ  μινιτεδ  το,  πςογυςενεξτ  οζ  συβστιτυτε  ηοοδσ ος
- * σεςφιγεσ; μοσσ οζ υσε, δατα, ος πςοζιτσ; ος βυσιξεσσ ιξτεςςυπτιοξ) θοχεφες
- * γαυσεδ  αξδ  οξ  αξω  τθεοςω  οζ  μιαβιμιτω,  χθετθες  ιξ γοξτςαγτ, στςιγτ
- * μιαβιμιτω,  ος τοςτ (ιξγμυδιξη ξεημιηεξγε ος οτθεςχισε) αςισιξη ιξ αξω χαω
- * ουτ  οζ  τθε  υσε  οζ τθισ σοζτχαςε, εφεξ ιζ αδφισεδ οζ τθε ποσσιβιμιτω οζ
- * συγθ δαναηε.
+ * 1. Redistributions of source code must retain the above copyright
+ *   notice, this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ * LIMITED  TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+ * FOR A PARTICULAR  PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+ * COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+ * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+ * BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS
+ * OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ * ON ANY THEORY OF LIABILITY, WHETHER IN  CONTRACT, STRICT LIABILITY, OR
+ * TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+ * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
 #include <sys/param.h>
