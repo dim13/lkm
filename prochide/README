@@ -1,0 +1,32 @@
+prochide obsd LKM 
+---------------------
+
+1. build
+2. cli usage
+3. command
+
+build
+---------------------
+1. tar zxf prochide-v0.X.tar.gz
+2. make
+3. make load (requires root privs)
+4. ./ph
+
+ph cli usage
+--------------------
+The prochide command line client allows for 
+hiding of individual pids or a single uid.
+
+note: hiding user will still see hidden pids;
+other users will not.
+
+commands
+--------------------
+hide a pid: ./ph -h -p <pid>
+show a pid: ./ph -s -p <pid>
+hide a uid: ./ph -h -u <uid>
+show a uid: ./ph -s -u <uid>
+
+Thats it!
+
+-mike <mike@gravitino.net>
