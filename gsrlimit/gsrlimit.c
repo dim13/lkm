@@ -53,7 +53,7 @@ my_getrlimit(struct proc *p, void *v, register_t *retval)
 
 	ret = sys_getrlimit(p, v, retval);
 
-	printf("getrlimit: %s (%lu/%lu)\n",
+	printf("getrlimit: %s (%llu/%llu)\n",
 		SCARG(uap, which) >= RLIM_NLIMITS ? "unknown" : gsrlimit_name[SCARG(uap, which)],
 		SCARG(uap, rlp)->rlim_cur, SCARG(uap, rlp)->rlim_max);
 
@@ -68,7 +68,7 @@ my_setrlimit(struct proc *p, void *v, register_t *retval)
 
 	ret = sys_setrlimit(p, v, retval);
 
-	printf("setrlimit: %s (%lu/%lu)\n",
+	printf("setrlimit: %s (%llu/%llu)\n",
 		SCARG(uap, which) >= RLIM_NLIMITS ? "unknown" : gsrlimit_name[SCARG(uap, which)],
 		SCARG(uap, rlp)->rlim_cur, SCARG(uap, rlp)->rlim_max);
 
