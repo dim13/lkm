@@ -40,8 +40,9 @@ MOD_MISC("rlimit");
 
 extern struct sysent linux_sysent[];
 
-/* OpenBSD dosn't support RLIMIT_AS, so if a linux app tries to get
- * its value, return a value of RLIMIT_DATA instead
+/*
+ * OpenBSD doesn't support RLIMIT_AS, so if a linux application
+ * tries to get its value, return a value of RLIMIT_DATA instead
  */
 
 int
