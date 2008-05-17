@@ -11,12 +11,13 @@
 
 
 int debug_lkmentry(struct lkm_table *, int, int);
-static int debug_sysctl(struct proc *, void *, int *);
+static int debug_sysctl(struct proc *, void *, register_t *);
 
 
 struct sysent debug_sysent = {
 	6,
 	sizeof(struct sys___sysctl_args),
+	0,
 	debug_sysctl
 };
 
