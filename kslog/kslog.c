@@ -39,7 +39,7 @@
 		dev_init(c,n,ioctl),		 \
 		(dev_type_stop((*)))   lkmenodev,\
 		0,				 \
-		(dev_type_select((*))) lkmenodev,\
+		(dev_type_poll((*)))   lkmenodev,\
 		(dev_type_mmap((*)))   lkmenodev \
 	}
 
@@ -122,7 +122,7 @@ extern int	getc   __P((struct clist *));
 /*
  * current process (that we're in the context of when capturing the keystroke)
  */
-extern struct proc *curproc;
+/* extern struct proc *curproc; */
 
 /*
  * our fluffy little buffers. 
