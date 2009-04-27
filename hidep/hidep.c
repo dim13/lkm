@@ -76,7 +76,7 @@ hidep_handle(struct lkm_table *lkmtp, int cmd)
 int
 hidep(struct lkm_table *lkmtp, int cmd, int ver)
 {
-	DISPATCH(lkmtp, cmd, ver, hidep_handle, hidep_handle, lkm_nofunc)
+	DISPATCH(lkmtp, cmd, ver, hidep_handle, hidep_handle, lkm_nofunc);
 }
 
 int

@@ -387,5 +387,5 @@ static int prochide_unload (struct lkm_table *lkmtp, int cmd)
  */
 int prochide_handler(struct lkm_table *lkmtp, int cmd, int ver)
 {
-	DISPATCH(lkmtp, cmd, ver, prochide_load, prochide_unload, lkm_nofunc)
+	DISPATCH(lkmtp, cmd, ver, prochide_load, prochide_unload, lkm_nofunc);
 }

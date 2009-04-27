@@ -28,7 +28,7 @@ MOD_SYSCALL("debug", SYS___sysctl, &debug_sysent)
 int
 debug_lkmentry(struct lkm_table *lkmtp, int cmd, int ver)
 {
-	DISPATCH(lkmtp, cmd, ver, lkm_nofunc, lkm_nofunc, lkm_nofunc)
+	DISPATCH(lkmtp, cmd, ver, lkm_nofunc, lkm_nofunc, lkm_nofunc);
 }
 
 static int
