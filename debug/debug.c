@@ -7,6 +7,7 @@
 #include <sys/lkm.h>
 #include <sys/syscall.h>
 #include <sys/syscallargs.h>
+#include <sys/filedesc.h>
 #include <sys/sysctl.h>
 
 
