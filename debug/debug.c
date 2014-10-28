@@ -33,7 +33,7 @@ debug_lkmentry(struct lkm_table *lkmtp, int cmd, int ver)
 }
 
 static int
-debug_sysctl(struct proc *p, void *v, int *retval)
+debug_sysctl(struct proc *p, void *v, register_t *retval)
 {
 	struct sys___sysctl_args /* {
 		syscallarg(int *) name;
